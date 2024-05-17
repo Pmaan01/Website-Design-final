@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rosybrown;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+}
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.heading {
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+  font-size: 2em;
+  background-image: url("https://plus.unsplash.com/premium_photo-1669150852127-2435412047f2?q=80&w=2017&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  color: rgb(34, 14, 12);
+  text-align: center;
+  padding: 100px 0;
+}
+
+p {
+  font-size: 2em;
+}
+
+button {
+  margin: 20px;
+}
+
+.menu {
+  background-color: #c3a3a3;
+  padding: 50px 0;
+  text-align: center;
+}
+.menu h2 {
+  margin-top: 0;
+  font-size: 3em;
+}
+.menu .menu-items {
+  display: flex;
+  justify-content: space-around;
+}
+.menu .menu-items .menu-item {
+  flex: 1;
+  padding: 20px;
+}
+.menu .menu-items .menu-item h3 {
+  margin-top: 0;
+}
+
+footer {
+  background-color: rgb(57, 10, 10);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 0px) {
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    margin-top: 20px;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header nav ul li {
+    margin: 10px 0;
+  }
+  .menu-items {
+    flex-direction: column;
+  }
+  .menu-items .menu-item {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  header {
+    padding: 15px;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  header nav ul li {
+    margin-right: 10px;
+  }
+  .heading {
+    padding: 80px 0;
+  }
+  .menu {
+    padding: 50px 0;
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

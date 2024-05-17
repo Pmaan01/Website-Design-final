@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curry in a Hurry</title>
+  <link rel="stylesheet" href="Sass/style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Curry in a Hurry</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="cart-btn">Cart</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="heading">
+    <div class="hero-content">
+       
+      <h2>Welcome to Curry in a Hurry</h2>
+      
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <p>Experience the finest culinary delights at our restaurant</p>
+    <div class="menu-items">
+      <div class="menu-item">
+        <h3>Appetizers</h3>
+        <ul> <li>Samosa Chana Plate  $8.50<button class="add-to-cart">Click to Order</button></li>
+            <li>Channa Bhatura  $8.50<button class="add-to-cart">Click to Order</button></li>
+            <li>Gol Gappa 10 pcs  $9.99<button class="add-to-cart">Click to Order</button></li>
+            <li>Samosas with chutney  $3.00<button class="add-to-cart">Click to Order</button></li>
+            <li>Chaat Papri  $8.50<button class="add-to-cart">Click to Order</button></li>
+            <li>Paneer Pakora 1 Lb $12.00<button class="add-to-cart">Click to Order</button></li>
+            <li>Aloo Tikki Plate  $8.00<button class="add-to-cart">Click to Order</button></li>
+            <li>Aloo Tikki  $3.00<button class="add-to-cart">Click to Order</button></li>
+            
+        </ul>
+      </div>
+      <div class="menu-item">
+        <h3>Main Course</h3>
+        <ul> 
+            <li>Butter Chicken  $13.50<button class="add-to-cart">Click to Order</button></li>
+            <li>Channa Curry  $8.50<button class="add-to-cart">Click to Order</button></li>
+            <li>Palak Paneer  $9.99<button class="add-to-cart">Click to Order</button></li>
+            <li>Shahi Paneer  $13.00<button class="add-to-cart">Click to Order</button></li>
+            <li>Chicken Curry  $18.50<button class="add-to-cart">Click to Order</button></li>
+            <li>Daal Tadka $12.00<button class="add-to-cart">Click to Order</button></li>
+            <li>Naan  $8.00<button class="add-to-cart">Click to Order</button></li>
+            <li>Rice  $3.00<button class="add-to-cart">Click to Order</button></li>
+            
+        </ul>
+      </div>
+      <div class="menu-item">
+        <h3>Desserts</h3>
+        <ul> <li>Falooda dessert  $8.50<button class="add-to-cart">Click to Order</button></li>
+            <li>Gulab Jamun fried milk cake $8.50<button class="add-to-cart">Click to Order</button></li>
+            <li>Ice Cream  $3.00<button class="add-to-cart">Click to Order</button></li>
+            <li>Kaju katli  $8.50<button class="add-to-cart">Click to Order</button></li>
+            <li>Jalebi  $8.00<button class="add-to-cart">Click to Order</button></li>
+            
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Contact us at: contact@curry-hurry.com</p>
+  </footer>
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cart-items">
+        <!-- Cart items will be displayed here -->
+      </ul>
+      <p id="total">Total: $0.00</p>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
